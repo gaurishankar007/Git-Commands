@@ -1,0 +1,11 @@
+1.Initializing a Github repository with a local repository {
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin <repo url>
+	git push -u origin master or main
+}
+
+2.Downloading a git repository {
+	git clone <repo url>
+}

@@ -1,0 +1,17 @@
+1. Fetch all of the branches from the repository,
+   this also downloads all of the required commits and files from the other repository {
+	git fetch <remote>
+}
+
+2. Same as the above command, but only fetch the specified branch {
+	git fetch <remote> <branch>
+}
+
+3. A power move which fetches all registered remotes and their branches {
+	git fetch --all
+}
+
+4. The --dry-run option will perform a demo run of the command, 
+   it will output examples of actions it will take during the fetch but not apply them {
+	git fetch --dry-run
+}

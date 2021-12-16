@@ -1,0 +1,6 @@
+1. Create a new file named ".gitignore" and give
+   the directory of the files you want to ignore to be pushed {
+	/auth
+	/models
+	/routes/userRoutes.js
+}

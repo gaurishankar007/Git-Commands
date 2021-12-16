@@ -1,0 +1,26 @@
+1.Track all the files that are deleted from the local repository and remove them {
+	git ls-files --deleted -z | xargs -0 git rm 
+	git status
+	git commimt -m "deleted files removed"
+}
+
+
+2.To remove a file both from the Git repository and the filesystem,
+you can use git rm without any parameters (except for the file's name, of course) {
+	git rm file1.txt
+}
+
+3.If you only want to remove the file from the repository,
+but keep it on the filesystem, you can add the --cached flag {
+	git rm file2.txt --cached
+}
+
+4.When trying to delete multiple files in a directory
+or via a glob pattern, you might want to perform a 
+"dry-run" first and see which files would be removed {
+	git rm css/* --dry-run
+	<=======Output=======>
+	rm 'css/about.css'
+	rm 'css/general.css'
+	<=======Output=======>
+}
